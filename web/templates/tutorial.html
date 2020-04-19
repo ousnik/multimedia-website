@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="left-bar">
+        {% for i in range(1,11)%}
+        <a class="waves-effect waves-cadetblue" href="/tutorials/{{i}}" >
+            <span>{{i}}</span>
+        </a>
+        <br>
+        {% endfor %}
+    </div>
+    <div class="center top-content-2" style="padding-left: 20%; padding-right: 20%;">
+        <h4>
+            Tutorial {{num}}{{topic}}
+        </h4>
+    </div> 
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 3rem;">
+        {% if num in range(1,9) %}
+        <a href={{path}} download="Tutorial {{num}}">
+            <div class="my-btn btn-outline-dark waves-effect waves-grey" style="letter-spacing: 0.25rem;">
+                Download Now
+            </div>
+        </a>
+        {% else %}
+        <a href={{path}}>
+            <div class="my-btn btn-outline-dark waves-effect waves-grey" style="letter-spacing: 0.25rem;">
+                Open Link
+            </div>
+        </a>
+        {% endif %}
+    </div>
+{% endblock content %}
