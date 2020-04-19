@@ -1,4 +1,4 @@
-list=[ "Word File using MS Word",
+tut_list=[ "Word File using MS Word",
        "PowerPoint Presentation using MS PowerPoint", 
        "Poster or Invitation using Adobe Illustrator",
        "Image Changing using Adobe Photoshop",
